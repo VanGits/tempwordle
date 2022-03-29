@@ -5,7 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'KCThumper';
-    overflow: hidden;
+    
     
 }
 
@@ -13,8 +13,12 @@ html{
     scroll-behavior: smooth;
     height: 100%;
     max-height: 100vh;
+
+   
     
-    
+}
+body{
+    overflow: hidden;
 }
 
 .click {
@@ -393,12 +397,12 @@ ALBUMS
         width: 450px;
     }
     .click:hover{
-        transform: scale(1);
+        transform: none;
         color: #fff;
-        font-size:initial;
+        font-size:none;
     }
     .click:active{
-        transform: scale(1);
-        font-size: initial;
+        transform: none;
+        font-size: none;
     }
 }
