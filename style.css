@@ -255,7 +255,6 @@ LANDING PAGE
     display: flex;
     animation: scaled 1400ms 1400ms backwards;
     animation-delay: 2s;
-    z-index: 10000;
    
     
 }
@@ -436,4 +435,10 @@ ALBUMS
         margin: 8px 0;
     }
     
+}
+
+@media(max-height:600px){
+    iframe{
+       display: none;
+    }
 }
