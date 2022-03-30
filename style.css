@@ -208,7 +208,7 @@ LANDING PAGE
 }
 
 .header__img {
-    width: 700px;
+    width: 500px;
     object-fit: contain;
     animation: scaled 800ms 800ms backwards;
     
@@ -234,13 +234,16 @@ LANDING PAGE
     align-items: center;
     margin: 24px 0;
     animation: scaled 1200ms 1200ms backwards;
+    animation-delay: 2s;
 }
 
 .header__text{
-    font-weight: 300;
+    font-weight: 700;
+    font-size: 20px;
     max-width: 500px;
     line-height: 1;
     padding: 0 12px;
+    
     
     
     
@@ -256,21 +259,25 @@ LANDING PAGE
 
 .header__socials {
     display: flex;
+    justify-content: center;
     animation: scaled 1400ms 1400ms backwards;
-    animation-delay: 2s;
     z-index: 9999;
    
     
 }
 
 .header__social {
-    margin: 12px 20px;
+    margin: 12px 24px;
     font-size: 20px;
     z-index: 9999;
     
 }
+
+.header__container{
+    padding: 16px 0;
+}
 .playlist{
-    margin: 4px;
+    margin: 8px 0;
 }
 .show{
     letter-spacing: 5px;
@@ -415,7 +422,7 @@ ALBUMS
 
 @media (max-width: 768px) {
     .header__img{
-        width: 450px;
+        width: 275px;
     }
     .click:hover{
         transform: none;
@@ -426,36 +433,26 @@ ALBUMS
         transform: none;
         font-size: none;
     }
-    iframe{
-        height: 180px;
-    }
-    .show{
-        letter-spacing: 3px;
-        font-size: 18px;
-    }
     .header__list{
-        margin: 4px 0;
+        padding: 16px 0;
     }
     section .wave{
         transform:translateY(50%);
     }
-    
+    .header__social {
+        margin: 12px 12px;
+        font-size: 16px;
+    }
+    .playlist{
+        padding: 2px 0;
+    }
 }
 
 @media(max-height:600px){
-    iframe{
-        height: 180px;
-    }
     .header__list{
         margin: 2px 0;
     }
     section .wave{
         transform:translateY(50%);
-    }
-}
-
-@media(min-height:668px){
-    iframe{
-        height: 280px;
     }
 }
