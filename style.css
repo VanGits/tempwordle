@@ -257,6 +257,7 @@ LANDING PAGE
 .header__socials {
     display: flex;
     animation: scaled 1400ms 1400ms backwards;
+    z-index: 1000;
    
     
 }
