@@ -17,9 +17,6 @@ html{
    
     
 }
-body{
-    overflow: hidden;
-}
 
 .click {
     cursor: pointer;
@@ -273,6 +270,7 @@ LANDING PAGE
 .show{
     letter-spacing: 3px;
     font-size: 24px;
+    text-align: center;
 }
 
 
@@ -433,4 +431,8 @@ ALBUMS
         letter-spacing: 3px;
         font-size: 18px;
     }
+    .header__list{
+        margin: 8px 0;
+    }
+    
 }
