@@ -443,6 +443,9 @@ ALBUMS
         margin: 12px 12px;
         font-size: 16px;
     }
+    .header__text{
+        font-size: 16px;
+    }
     .playlist{
         padding: 2px 0;
     }
