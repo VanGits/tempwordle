@@ -437,3 +437,8 @@ ALBUMS
     
 }
 
+@media(max-height:600px){
+    iframe{
+        height: 180px;
+    }
+}
