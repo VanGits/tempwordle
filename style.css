@@ -143,6 +143,7 @@ li {
 
 .orange {
     color: #fff;
+    letter-spacing: 2px;
 }
 
 .border-box {
@@ -161,6 +162,11 @@ li {
     background-color: #df6f39;
     border-radius: 10px;
     border: 1px solid black;
+}
+
+.underline{
+    text-decoration: underline;
+    text-underline-offset: 2px;
 }
 /*
 
@@ -223,6 +229,9 @@ LANDING PAGE
 
 .header__list {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin: 24px 0;
     animation: scaled 1200ms 1200ms backwards;
 }
@@ -232,9 +241,8 @@ LANDING PAGE
     max-width: 500px;
     line-height: 1.5;
     padding: 0 12px;
-    text-decoration: underline;
-    text-underline-offset: 3px;
-    letter-spacing: 2px;
+    
+    
     
     
     
@@ -258,6 +266,15 @@ LANDING PAGE
     font-size: 20px;
     
 }
+.playlist{
+    margin: 4px;
+}
+.show{
+    letter-spacing: 3px;
+    font-size: 24px;
+}
+
+
 
 
 /*
@@ -404,5 +421,15 @@ ALBUMS
     .click:active{
         transform: none;
         font-size: none;
+    }
+    section .wave{
+        background-size: 1000px;
+    }
+    iframe{
+        height: 180px;
+    }
+    .show{
+        letter-spacing: 3px;
+        font-size: 18px;
     }
 }
