@@ -273,7 +273,7 @@ LANDING PAGE
     margin: 4px;
 }
 .show{
-    letter-spacing: 3px;
+    letter-spacing: 5px;
     font-size: 24px;
     text-align: center;
 }
@@ -434,7 +434,7 @@ ALBUMS
         font-size: 18px;
     }
     .header__list{
-        margin: 0 0;
+        margin: 2px 0;
     }
     section .wave{
         transform:translateY(50%);
@@ -447,7 +447,7 @@ ALBUMS
         height: 180px;
     }
     .header__list{
-        margin: 0 0;
+        margin: 2px 0;
     }
     section .wave{
         transform:translateY(50%);
