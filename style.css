@@ -434,7 +434,7 @@ ALBUMS
         font-size: 18px;
     }
     .header__list{
-        margin: 2px 0;
+        margin: 4px 0;
     }
     section .wave{
         transform:translateY(50%);
