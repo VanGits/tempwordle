@@ -166,7 +166,7 @@ li {
 
 .underline{
     text-decoration: underline;
-    text-underline-offset: 2px;
+    text-underline-offset: 3px;
 }
 /*
 
@@ -229,20 +229,19 @@ LANDING PAGE
 
 .header__list {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 24px 0;
+    padding-top: 12px;
     animation: scaled 1200ms 1200ms backwards;
-    animation-delay: 2s;
 }
 
 .header__text{
     font-weight: 700;
-    font-size: 20px;
+    font-size: 16px;
     max-width: 500px;
     line-height: 1;
     padding: 0 12px;
+    
     
     
     
@@ -262,19 +261,20 @@ LANDING PAGE
     justify-content: center;
     animation: scaled 1400ms 1400ms backwards;
     z-index: 9999;
+    padding-top: 24px;
    
     
 }
 
 .header__social {
-    margin: 12px 24px;
+    margin: 0 18px;
     font-size: 20px;
     z-index: 9999;
     
 }
 
 .header__container{
-    padding: 16px 0;
+    padding: 20px 0;
 }
 .playlist{
     margin: 8px 0;
@@ -433,9 +433,7 @@ ALBUMS
         transform: none;
         font-size: none;
     }
-    .header__list{
-        padding: 16px 0;
-    }
+    
     section .wave{
         transform:translateY(50%);
     }
@@ -444,7 +442,7 @@ ALBUMS
         font-size: 16px;
     }
     .header__text{
-        font-size: 16px;
+        font-size: 12px;
     }
     .playlist{
         padding: 2px 0;
@@ -452,9 +450,6 @@ ALBUMS
 }
 
 @media(max-height:600px){
-    .header__list{
-        margin: 2px 0;
-    }
     section .wave{
         transform:translateY(50%);
     }
