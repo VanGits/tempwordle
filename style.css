@@ -1,4 +1,5 @@
 @font-face { font-family: KCThumper; src: url('./assets/KCThumper.otf'); } 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;500;600;700&family=Poppins:wght@300;400;500;700&display=swap');
 *{
     margin: 0;
@@ -13,11 +14,19 @@ html{
     scroll-behavior: smooth;
     height: 100%;
     max-height: 100vh;
+   
 
    
     
 }
 
+
+.main__name{
+    font-family: "Great Vibes";
+    font-size: 52px;
+    animation: scaled 800ms 800ms backwards;
+    
+}
 .click {
     cursor: pointer;
     transition: all 300ms ease;
@@ -28,10 +37,41 @@ html{
 }
 .click:hover {
     transform: scale(1.1);
-    color: #3B9CC0;
+    color: white;
     font-size: 18px;
     
 }
+
+.youtube:hover {
+    transform: scale(1.1);
+    color: #ff0000;
+    font-size: 18px;
+    
+}
+
+.facebook:hover {
+    transform: scale(1.1);
+    color: #4267B2;
+    font-size: 18px;
+    
+}
+
+.instagram:hover {
+    transform: scale(1.1);
+    color: #C13584;
+    font-size: 18px;
+    
+}
+
+.spotify:hover {
+    transform: scale(1.1);
+    color: #1DB954;
+    font-size: 18px;
+    
+}
+
+
+
 
 .click:active{
     transform: scale(0.8);
@@ -47,7 +87,7 @@ html{
 button {
     border: none;
     cursor: pointer;
-    color: white;
+    color:black;
     
 }
 
@@ -142,7 +182,7 @@ li {
 }
 
 .orange {
-    color: #fff;
+    color: black;
     letter-spacing: 2px;
 }
 
@@ -153,7 +193,7 @@ li {
     
 }
 
-::-webkit-scrollbar{
+/*::-webkit-scrollbar{
     width: 8px;
     background: white;
     
@@ -163,10 +203,10 @@ li {
     border-radius: 10px;
     border: 1px solid black;
 }
-
+*/
 .underline{
     text-decoration: underline;
-    text-underline-offset: 3px;
+    text-underline-offset: 4px;
 }
 /*
 
@@ -176,7 +216,35 @@ LANDING PAGE
 
 #landing-page {
     min-height: 100vh;
-    background: radial-gradient(orange, #ff8d2c);
+    
+   
+    
+    
+}
+
+#landing-page::before {    
+    content: "";
+    background-image: url("./assets/quantum-gradient.svg");
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.4;
+    animation: background-disco 10s 10s infinite;
+}
+
+@keyframes background-disco{
+    0%{
+        opacity: 0.4;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 0.4;
+    }
 }
 .header{
     position: absolute;
@@ -207,12 +275,7 @@ LANDING PAGE
     
 }
 
-.header__img {
-    width: 500px;
-    object-fit: contain;
-    animation: scaled 800ms 800ms backwards;
-    
-}
+
 
 
 .header__content{
