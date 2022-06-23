@@ -12,7 +12,6 @@
 html{
     scroll-behavior: smooth;
     height: 100%;
-    max-height: 100vh;
 
    
     
@@ -351,6 +350,128 @@ nav {
         transform: translateY(-3px);
     }
 
+}
+
+/*
+
+WORDLE
+
+*/
+
+body{
+    background-color: #000000;
+    
+}
+#container{
+    display: flex;
+    justify-content: center;
+}
+.fireworks-container{
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    z-index: 100;
+}
+.wordleText{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+#wordle h1{
+    font-size: 32px;
+    letter-spacing: 1px;
+}
+
+#wordle{
+    background-color: #000000;
+    
+}
+
+#game{
+    width: 100%;
+    max-width: 500px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.header__text{
+    max-width: fit-content;
+}
+
+
+#game header{
+    padding: 8px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #3a3a3c;
+}
+
+#board__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    overflow: hidden;
+}
+
+#board{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.square{
+    border: 2px solid #3a3a3c;
+    min-width: 62px;
+    min-height: 62px;
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.keyboard__row{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto 8px;
+    touch-action: manipulation;
+}
+
+#keyboard__container{
+    padding: 10px;
+}
+
+.keyboard__row button{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    border: 0;
+    padding: 0;
+    height: 58px;
+    cursor: pointer;
+    background-color: rgb(129, 131, 132);
+    color: rgb(215, 218, 220);
+    flex-grow: 1;
+    text-transform: uppercase;
+    margin-right: 6px;
+    border-radius: 4px;
+    user-select: none;
+}
+
+.keyboard__row button.wide__button{
+    flex-grow: 1.5;
+}
+.spacer__half{
+    flex-grow: 0.5;
 }
 
 

@@ -1,18 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vealy | Home</title>
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>What's my name?</title>
+    <link rel="stylesheet" href="style.css" />
     <link rel="shortcut icon" href="./assets/sample pic.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <script src="index.js"></script>
-    <script src="https://kit.fontawesome.com/009c432c0f.js" crossorigin="anonymous"></script>
-</head>
-<body>
-    <section id="landing-page">
-        <!--<nav>
+    <script
+      src="https://kit.fontawesome.com/009c432c0f.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/fireworks-js@latest/dist/fireworks.js"></script>
+  </head>
+  <body>
+    <!-- <section id="landing-page">
+        <nav>
             
             <ul class = "nav__links">
                 <li class = "nav__link"> 
@@ -50,7 +58,7 @@
          
             
 
-        </nav>!-->
+        </nav>
 
         <header class="header">
                 <div class = "row">
@@ -126,19 +134,75 @@
                     
                 </div>
         </header>
-        <!--<a href="#songs">
+        <a href="#songs">
             <div class = "scroll-icon click">
                 <i class="fa-solid fa-arrow-down"></i>
             </div>
-        </a>!-->
+        </a>
 
         <div class = "wave wave1"></div>
         <div class = "wave wave2"></div>
         <div class = "wave wave3"></div>
         <div class = "wave wave4"></div>
         
+    </section> -->
+
+    <section id="wordle">
+      <div class="fireworks-container"></div>
+      <div id="container">
+        <div id="game">
+          <header>
+            <div class="header__Text">
+              <h1 class="wordleText">WHAT'S MY NAME?</h1>
+            </div>
+          </header>
+
+          <div id="board__container">
+            <div id="board"></div>
+          </div>
+
+          <div id="keyboard__container">
+            <div class="keyboard__row">
+              <button data-key="q">q</button>
+              <button data-key="w">w</button>
+              <button data-key="e">e</button>
+              <button data-key="r">r</button>
+              <button data-key="t">t</button>
+              <button data-key="y">y</button>
+              <button data-key="u">u</button>
+              <button data-key="i">i</button>
+              <button data-key="o">o</button>
+              <button data-key="p">p</button>
+            </div>
+            <div class="keyboard__row">
+              <div class="spacer__half"></div>
+              <button data-key="a">a</button>
+              <button data-key="s">s</button>
+              <button data-key="d">d</button>
+              <button data-key="f">f</button>
+              <button data-key="g">g</button>
+              <button data-key="h">h</button>
+              <button data-key="j">j</button>
+              <button data-key="k">k</button>
+              <button data-key="l">l</button>
+              <div class="spacer__half"></div>
+            </div>
+            <div class="keyboard__row">
+              <button data-key="enter" class="wide__button">Enter</button>
+              <button data-key="z">z</button>
+              <button data-key="x">x</button>
+              <button data-key="c">c</button>
+              <button data-key="v">v</button>
+              <button data-key="b">b</button>
+              <button data-key="n">n</button>
+              <button data-key="m">m</button>
+              <button data-key="del" class="wide__button">Del</button>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
-   
+
     <!--<section id="songs">
         <div class="container">
             <div class="row">
@@ -167,5 +231,5 @@
             </div>
         </div>
     </section>!-->
-</body>
+  </body>
 </html>
