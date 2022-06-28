@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'KCThumper';
+    font-family: 'Poppins';
     
     
 }
@@ -12,7 +12,6 @@
 html{
     scroll-behavior: smooth;
     height: 100%;
-    max-height: 100vh;
 
    
     
@@ -351,6 +350,261 @@ nav {
         transform: translateY(-3px);
     }
 
+}
+
+/*
+
+WORDLE
+
+*/
+
+body{
+    background-color: #030303;
+    height: 100%;
+   
+    
+    
+}
+#container{
+    display: flex;
+    justify-content: center;
+    align-items: space-between;
+    
+    height: 100%;
+  
+    
+}
+.fireworks-container{
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    z-index: 100;
+}
+.wordleText{
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-family: "Poppins";
+    color: white;
+}
+#wordle h1{
+    font-size: 32px;
+    letter-spacing: 1px;
+}
+
+.header__Text{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#wordle{
+    background-color: #121213;
+    height: 100%;
+    position: relative;
+    
+    
+    
+   
+    
+    
+}
+
+
+#board__container{
+    justify-self: center;
+}
+#game{
+    width: 100%;
+    
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+}
+
+
+#game header{
+    padding: 12px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #3a3a3c;
+}
+
+#board__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    overflow: hidden;
+}
+
+#board{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+    
+}
+
+.square{
+    border: 2px solid #3a3a3c;
+    min-width: 62px;
+    min-height: 62px;
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-family: "Poppins";
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.keyboard__row{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto 8px;
+    touch-action: manipulation;
+    max-width: 500px;
+}
+
+#keyboard__container{
+    padding: 10px;
+
+    justify-self: center;
+    
+
+}
+
+.keyboard__row button{
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-family: "Poppins";
+    font-weight: 400;
+    border: 0;
+    padding: 0;
+    height: 58px;
+    cursor: pointer;
+    background-color: rgb(129, 131, 132);
+    color: rgb(215, 218, 220);
+    flex-grow: 1;
+    text-transform: uppercase;
+    margin-right: 6px;
+    border-radius: 4px;
+    user-select: none;
+}
+
+.keyboard__row button.wide__button{
+    flex-grow: 1.5;
+}
+.spacer__half{
+    flex-grow: 0.5;
+}
+
+
+#game .fa-solid{
+    cursor: pointer;
+    font-size: 32px;
+    color: white;
+    align-self: center;
+    cursor: pointer;
+    z-index: 1000;
+    
+}
+
+.popUp{
+    position:absolute;
+    display: flex ;
+    align-items: center;
+    
+    flex-direction: column;
+    align-self: start;
+    width: 40%;
+    height: 80%;
+    background-color: #ffffff;
+    z-index: 100000000;
+    border: 1px solid #3a3a3c;
+    border-radius: 5px;
+    background-color: #121213;
+}
+
+.popUp p{
+    color: white;
+}
+
+.popUp h1{
+    font-size: 24px;
+}
+
+.popUp__top{
+    display: flex;
+    width: 100%;
+    height: 50px;
+    align-items: center;
+    justify-content: space-between;
+}
+.popUp__middle{
+    
+    width: 80%;
+    margin-top: 50px;
+}
+
+.popUp__top .fa-solid{
+    color: white;
+    cursor: pointer;
+    font-size: 24px;
+    margin-right: 12px;
+}
+
+.popUp__Text{
+    color: white;
+}
+
+@media (max-width: 1000px){
+    #popUp{
+        width: 60%;
+        height: 60%;
+    }
+}
+
+@media (max-width:768px) {
+    #game {
+        height: 100%;
+    }
+
+    #popUp{
+        width: 80%;
+        height: 60%;
+    }
+
+    .square{
+        min-height: 55px;
+        min-width: 55px;
+        font-size: 1.5rem;
+    }
+
+    #game h1{
+        font-size: 24px;
+    }
+
+    .keyboard__row button{
+        height: 48px;
+    }
+
+   
+    
+}
+
+@media (max-width: 480px) {
+    .square{
+        min-height: 50px;
+        min-width: 50px;
+        font-size: 1.2rem;
+    }
 }
 
 
