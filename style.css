@@ -595,7 +595,7 @@ body{
     }
 
     .keyboard__row button{
-        height: 36px;
+        height: 45px;
     }
 
    
@@ -604,8 +604,8 @@ body{
 
 @media (max-width: 480px) {
     .square{
-        min-height: 50px;
-        min-width: 50px;
+        min-height: 40px;
+        min-width: 40px;
         font-size: 1.2rem;
     }
 }
