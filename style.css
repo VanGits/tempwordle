@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins';
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
     
     
 }
@@ -457,7 +457,7 @@ body{
     font-weight: bold;
     color: white;
     /* font-family: Arial, Helvetica, sans-serif; */
-    font-family: "Poppins";
+    font-family: "Poppins",  Arial, Helvetica, sans-serif;
     text-transform: uppercase;
     display: flex;
     align-items: center;
@@ -483,7 +483,7 @@ body{
 
 .keyboard__row button{
     /* font-family: Arial, Helvetica, sans-serif; */
-    font-family: "Poppins";
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
     font-weight: 400;
     border: 0;
     padding: 0;
@@ -516,7 +516,7 @@ body{
     
 }
 
-.popUp{
+#popUp{
     position:absolute;
     display: flex ;
     align-items: center;
@@ -532,12 +532,12 @@ body{
     background-color: #121213;
 }
 
-.popUp p{
+#popUp p{
     color: white;
 }
 
-.popUp h1{
-    font-size: 24px;
+#popUp h1{
+    font-size: 20px;
 }
 
 .popUp__top{

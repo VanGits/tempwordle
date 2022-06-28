@@ -11,6 +11,9 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300&display=swap" rel="stylesheet">
     <script src="index.js"></script>
     <script
       src="https://kit.fontawesome.com/009c432c0f.js"
@@ -151,11 +154,11 @@
       <div class="fireworks-container"></div>
 
       <div id="container">
-        <div class="popUp">
+        <div id="popUp">
           <div class="popUp__top">
             <p></p>
             <h1 class="popUp__Text">HOW TO PLAY</h1>
-            <div onclick="closePopUp()"><i class="fa-solid fa-xmark" ></i></div>
+            <i onclick="closePopUp()" class="fa-solid fa-xmark" ></i>
           </div>
           <div class="popUp__middle">
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, nobis deserunt. Minus, dolore, animi qui blanditiis magni corrupti maxime esse delectus, vitae mollitia tempore quaerat natus expedita deserunt incidunt aperiam!</p>
@@ -166,7 +169,7 @@
             <div class="header__Text">
               <p class="wordleText"></p>
               <h1 class="wordleText">What's my name?</h1>
-              <i class="fa-solid fa-circle-question"></i>
+              <i class="fa-solid fa-circle-question" onclick="closePopUp()"></i>
             </div>
           </header>
 

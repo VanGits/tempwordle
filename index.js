@@ -10,8 +10,14 @@ function popUp() {
   document.body.classList += " popUp"
 }
 function closePopUp() {
-  document.body.classList.remove('popUp')
-  console.log("hi")
+  var popUpNoti = document.getElementById("popUp")
+  if (popUpNoti.style.display === "none"){
+    popUpNoti.style.display = "flex"
+  } else {
+    popUpNoti.style.display = "none"
+  }
+  console.log("wassup")
+
 }
 
 
