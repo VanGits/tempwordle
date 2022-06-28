@@ -424,7 +424,7 @@ body{
 
 
 #game header{
-    padding: 12px;
+    padding: 4px;
     
     display: flex;
     align-items: center;
@@ -530,6 +530,7 @@ body{
     border: 1px solid #3a3a3c;
     border-radius: 5px;
     background-color: #121213;
+    overflow-y: auto;
 }
 
 #popUp p{
@@ -575,6 +576,8 @@ body{
     #game {
         height: 100%;
     }
+
+    
 
     #popUp{
         width: 80%;
