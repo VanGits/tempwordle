@@ -152,7 +152,7 @@ li {
     
 }
 
-::-webkit-scrollbar{
+/* ::-webkit-scrollbar{
     width: 8px;
     background: white;
     
@@ -161,7 +161,7 @@ li {
     background-color: #df6f39;
     border-radius: 10px;
     border: 1px solid black;
-}
+} */
 
 .underline{
     text-decoration: underline;
@@ -361,6 +361,7 @@ WORDLE
 body{
     background-color: #030303;
     height: 100%;
+    
    
     
     
@@ -369,7 +370,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: space-between;
-    
+    overflow-y: auto;
     height: 100%;
   
     

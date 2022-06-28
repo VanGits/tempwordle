@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const container = document.querySelector(".fireworks-container");
   const fireworks = new Fireworks(container);
   
-
+ 
   
 
   function getCurrentWordArr() {
@@ -133,9 +133,11 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   for (let i = 0; i < keys.length; i++) {
+    
     keys[i].onclick = ({ target }) => {
+      
       const letter = target.getAttribute("data-key");
-
+      
       if (letter === "enter") {
         handleSubmitWord();
         return;
@@ -148,4 +150,34 @@ document.addEventListener("DOMContentLoaded", () => {
       updateGuessedWords(letter);
     };
   }
+  for (let i = 0; i < keys.length; i++) {
+    
+    keys[i].onkeydown = ({ target }) => {
+      
+      const letter = target.getAttribute("data-key");
+      
+      if (letter === "enter") {
+        handleSubmitWord();
+        return;
+      }
+
+      if (letter === "del") {
+        handleDeleteLetter();
+        return;
+      }
+      updateGuessedWords(letter);
+    };
+  }
+  window.addEventListener('keydown', checkKeyDown, false)
+  
+  function checkKeyDown(e){
+    if(e.key){
+      console.log(e.key)
+    }
+  }
+
+
+
+    
+
 });
