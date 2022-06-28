@@ -1,3 +1,20 @@
+let popUpOpen = false;
+
+
+function popUp() {
+  if (popUpOpen){
+    popUpOpen = false
+    return document.body.classList.remove("popUp")
+  }
+  popUpOpen = true;
+  document.body.classList += " popUp"
+}
+function closePopUp() {
+  document.body.classList.remove('popUp')
+  console.log("hi")
+}
+
+
 document.addEventListener("DOMContentLoaded", () => {
   createSquares();
 
@@ -9,6 +26,9 @@ document.addEventListener("DOMContentLoaded", () => {
   const keys = document.querySelectorAll(".keyboard__row button");
   const container = document.querySelector(".fireworks-container");
   const fireworks = new Fireworks(container);
+  
+
+  
 
   function getCurrentWordArr() {
     const numberOfGuessedWords = guessedWords.length;
