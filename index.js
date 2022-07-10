@@ -2,12 +2,17 @@ let popUpOpen = false;
 
 
 function popUp() {
+  var popUpNoti = document.getElementsByClassName("popUp")
   if (popUpOpen){
     popUpOpen = false
-    return document.body.classList.remove("popUp")
+    popUpNoti.remove()
+    
+    
   }
   popUpOpen = true;
-  document.body.classList += " popUp"
+  popUpNoti = true
+  
+  
 }
 function closePopUp() {
   var popUpNoti = document.getElementById("popUp")

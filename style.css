@@ -566,6 +566,15 @@ body{
     color: white;
 }
 
+#board input{
+    height: 62px;
+    width: 62px;
+    font-size: 12px;
+    color: white;
+    background-color: #121213;
+    border: none;
+}
+
 @media (max-width: 1000px){
     #popUp{
         width: 60%;
