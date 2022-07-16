@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    
     
     
 }
@@ -218,6 +218,7 @@ LANDING PAGE
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-family: "KCThumper" !important;
     
     
 }
@@ -361,7 +362,7 @@ WORDLE
 body{
     background-color: #030303;
     height: 100%;
-    
+    position: relative;
    
     
     
@@ -393,14 +394,16 @@ body{
 
 .header__Text{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
     width: 100%;
 }
 
 #wordle{
-    background-color: #121213;
+    background: radial-gradient(orange, #ff8d2c);
     height: 100%;
     position: relative;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
     
     
     
@@ -430,7 +433,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    border-bottom: 1px solid #3a3a3c;
+    
 }
 
 #board__container{
@@ -441,6 +444,13 @@ body{
     overflow: hidden;
 }
 
+.wordle__logo{
+    max-width: 300px;
+    width: 100%;
+    object-fit: cover;
+    
+}
+
 #board{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -448,10 +458,12 @@ body{
     padding: 10px;
     box-sizing: border-box;
     
+    
 }
 
 .square{
-    border: 2px solid #3a3a3c;
+    border: 2px solid #fff;
+    
     min-width: 62px;
     min-height: 62px;
     font-size: 2rem;
@@ -490,8 +502,8 @@ body{
     padding: 0;
     height: 58px;
     cursor: pointer;
-    background-color: rgb(129, 131, 132);
-    color: rgb(215, 218, 220);
+    background-color: #fff;
+    color: #030303;
     flex-grow: 1;
     text-transform: uppercase;
     margin-right: 6px;
@@ -515,31 +527,45 @@ body{
     cursor: pointer;
     z-index: 1000;
     
+    
+    
+}
+.fa-circle-question{
+    position: absolute;
+    right: 10px;
 }
 
 #popUp{
     position:absolute;
     display: flex ;
     align-items: center;
-    
+    overflow: hidden;
     flex-direction: column;
     align-self: start;
-    width: 40%;
-    height: 80%;
-    background-color: #ffffff;
+    max-width: 400px;
+    width: 100%;
+    height: 400px;
     z-index: 100000000;
-    border: 1px solid #3a3a3c;
-    border-radius: 5px;
-    background-color: #121213;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #fff;
     overflow-y: auto;
+    box-shadow: 0px 2.98px 7.46px 0px rgba(0, 0, 0, 0.4)
+   
 }
 
 #popUp p{
-    color: white;
+    color:  rgb(219, 106, 0);
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 20px;
 }
 
 #popUp h1{
-    font-size: 20px;
+    font-size: 28px;
+    color: rgb(219, 106, 0);
 }
 
 .popUp__top{
@@ -547,7 +573,8 @@ body{
     width: 100%;
     height: 50px;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+   
 }
 .popUp__middle{
     
@@ -555,11 +582,11 @@ body{
     margin-top: 50px;
 }
 
-.popUp__top .fa-solid{
-    color: white;
+#popUp .fa-solid{
+    color: rgb(219, 106, 0);
     cursor: pointer;
     font-size: 24px;
-    margin-right: 12px;
+
 }
 
 .popUp__Text{
@@ -575,11 +602,35 @@ body{
     border: none;
 }
 
-@media (max-width: 1000px){
-    #popUp{
-        width: 60%;
-        height: 60%;
+span{
+    animation: blinker 1s linear infinite;
+}
+
+.close__wrapper{
+    position: absolute;
+    max-width: 50px;
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    box-shadow: 0px 2.98px 7.46px 0px rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+    
+    z-index: 9999999999999999999999999999999999999;
+}
+@keyframes blinker {
+    50%{
+        opacity: 0;
     }
+}
+
+@media (max-width: 1000px){
+ 
 }
 
 @media (max-width:768px) {
@@ -589,10 +640,7 @@ body{
 
     
 
-    #popUp{
-        width: 80%;
-        height: 60%;
-    }
+    
 
     .square{
         min-height: 55px;
