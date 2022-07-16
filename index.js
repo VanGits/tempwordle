@@ -4,10 +4,11 @@ var messageArray = [
   "Hey you! It's Vealy here. I'm gonna be changing my artist name soon! See if you can figure it out b4 I officially announce it. Little surprise at the very end if u crack it ;)",
 ];
 var textPosition = 0;
-var speed = 100;
+var speed = 75;
 
 typewriter = () => {
   document.querySelector("#message").innerHTML =
+  
     messageArray[0].substring(0, textPosition) + "<span>\u25ae</span>";
   if (textPosition++ != messageArray[0].length) {
     setTimeout(typewriter, speed);
@@ -15,6 +16,7 @@ typewriter = () => {
 };
 
 window.addEventListener("load", typewriter);
+
 
 function popUp() {
   var popUpNoti = document.getElementsByClassName("popUp");
@@ -32,6 +34,15 @@ function closePopUp() {
   } else {
     popUpNoti.style.display = "none";
   }
+}
+
+function popSuccess() {
+  var popUpSuccess = document.getElementById("congratulations__wrapper");
+  setInterval(() => {
+      popUpSuccess.style.visibility = "visible";
+  }, 3000)
+    
+  
 }
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -132,11 +143,12 @@ document.addEventListener("DOMContentLoaded", () => {
         window.alert("Word is not recognized!");
       });
     if (currentWord === word) {
-      window.alert("Congratulations!");
+      popSuccess();
       fireworks.start();
+      
     }
+  
   }
-
   function createSquares() {
     const gameBoard = document.getElementById("board");
 
