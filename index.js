@@ -17,7 +17,6 @@ typewriter = () => {
 
 window.addEventListener("load", typewriter);
 
-
 function popUp() {
   var popUpNoti = document.getElementsByClassName("popUp");
   if (popUpOpen) {
@@ -33,6 +32,13 @@ function closePopUp() {
     popUpNoti.style.display = "flex";
   } else {
     popUpNoti.style.display = "none";
+  }
+}
+
+function closePopSuccess() {
+  var popUpSuccess = document.getElementById("congratulations__wrapper");
+  if (popUpSuccess.style.visibility === "visible"){
+    return popUpSuccess.style.display = "none"
   }
 }
 
