@@ -1,7 +1,7 @@
 let popUpOpen = false;
 
 var messageArray = [
-  "Hey you! It's Vealy here. I'm gonna be changing my artist name soon! See if you can figure it out b4 I officially announce it. Little surprise at the very end if u crack it ;)",
+  "hey u! it's Vealy here. i'm gonna be changing my artist name soon! see if u can figure it out b4 I officially announce it. little surprise at the very end if u crack it ;)",
 ];
 var textPosition = 0;
 var speed = 75;
