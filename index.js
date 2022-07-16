@@ -139,7 +139,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         guessedWordCount += 1;
 
-        if (guessedWords.length === 6) {
+        if (guessedWords.length === 6 && currentWord !== word) {
           window.alert("You have lost, try again next time.");
           window.location.reload();
         }
